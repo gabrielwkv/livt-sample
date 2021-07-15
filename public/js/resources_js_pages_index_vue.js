@@ -70,11 +70,34 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", { staticClass: "text-4xl text-purple-400" }, [
-    _vm._v("Hello World")
-  ])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "h-screen grid justify-center items-center" },
+      [
+        _c(
+          "div",
+          { staticClass: "bg-gray-600 rounded-lg p-8 text-center grid gap-4" },
+          [
+            _c("h1", { staticClass: "text-white text-4xl" }, [
+              _vm._v("Welcome!")
+            ]),
+            _vm._v(" "),
+            _c("p", { staticClass: "text-white text-lg" }, [
+              _vm._v("Laravel, Inertia, Vue & TailwindCSS.")
+            ])
+          ]
+        )
+      ]
+    )
+  }
+]
 render._withStripped = true
 
 
